@@ -20,4 +20,11 @@ public class Sign_up extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
     }
+
+    public void save_details(View view) {
+        //to do data base and save data
+        //if valid close intend
+        finish();
+
+    }
 }

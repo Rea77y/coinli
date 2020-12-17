@@ -39,4 +39,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onPointerCaptureChanged(boolean hasCapture) {
 
     }
+
+    public void send_home(View view) {
+        //verify data
+        Intent t = new Intent(this, Home.class);
+        startActivity(t);
+    }
 }
