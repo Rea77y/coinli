@@ -13,17 +13,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
 
-        View sign_in_button= findViewById(R.id.sign_in_button);
+        View sign_in_button= findViewById(R.id.sign_in_sign_in_button);
         sign_in_button.setOnClickListener(this);
+        View sign_up_button= findViewById(R.id.sign_in_sign_up_button);
+        sign_up_button.setOnClickListener(this);
     }
 
     public void onClick(View arg0) {
-        if(arg0.getId() == R.id.sign_in_button) {
+        if(arg0.getId() == R.id.sign_in_sign_in_button) {
             //Transports users to the home activity
-            Intent intent = new Intent(this, Home.class);
-            this.startActivity(intent);
+            Intent transfer_to_sign_in = new Intent(this, Home.class);
+            this.startActivity(transfer_to_sign_in);
+        }
+        if(arg0.getId() == R.id.sign_in_sign_up_button)
+        {
+            Intent transfer_to_sign_up = new Intent(this, Sign_up.class);
+            this.startActivity(transfer_to_sign_up);
         }
     }
+
+
+
 
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
