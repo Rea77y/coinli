@@ -32,7 +32,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/home_algorithm_button"
+        android:id="@+id/home_profile_button"
         android:layout_width="69dp"
         android:layout_height="59dp"
         android:layout_marginTop="673dp"
@@ -43,7 +43,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/home_profile_button"
+        android:id="@+id/home_algorithm_button"
         android:layout_width="69dp"
         android:layout_height="59dp"
         android:layout_marginTop="673dp"
