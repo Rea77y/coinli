@@ -12,16 +12,17 @@
         android:id="@+id/editTextTextPassword"
         android:layout_width="287dp"
         android:layout_height="44dp"
-        android:ems="10"
-        android:inputType="textPassword"
+        android:autofillHints=""
         android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="pasword"
+        android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.468"
-        tools:ignore="MissingConstraints"
-        android:autofillHints="" />
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/sign_in_sign_in_button"
@@ -33,7 +34,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.562" />
+        app:layout_constraintVertical_bias="0.562"
+        />
 
     <Button
         android:id="@+id/sign_in_sign_up_button"
@@ -51,10 +53,10 @@
         android:id="@+id/editTextTextPersonName"
         android:layout_width="290dp"
         android:layout_height="43dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
         android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
