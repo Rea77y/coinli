@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         sign_in_button.setOnClickListener(this);
         View sign_up_button= findViewById(R.id.sign_in_sign_up_button);
         sign_up_button.setOnClickListener(this);
+        View forgot_password= findViewById(R.id.sign_in_forgot_password_button);
+        forgot_password.setOnClickListener(this);
     }
 
     public void onClick(View arg0) {
@@ -26,6 +28,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             this.startActivity(transfer_to_sign_in);
         }
         if(arg0.getId() == R.id.sign_in_sign_up_button)
+        {
+            Intent transfer_to_sign_up = new Intent(this, Sign_up.class);
+            this.startActivity(transfer_to_sign_up);
+        }
+        if(arg0.getId() == R.id.sign_in_forgot_password_button)
         {
             Intent transfer_to_sign_up = new Intent(this, Sign_up.class);
             this.startActivity(transfer_to_sign_up);
