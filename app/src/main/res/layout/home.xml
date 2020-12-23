@@ -43,7 +43,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/home_algorithm_button"
+        android:id="@+id/home_balance_button"
         android:layout_width="69dp"
         android:layout_height="59dp"
         android:layout_marginTop="673dp"
@@ -57,22 +57,21 @@
         android:id="@+id/home_chat_button"
         android:layout_width="60dp"
         android:layout_height="59dp"
-        android:layout_marginTop="673dp"
-
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         android:background="@android:color/transparent"
-        app:layout_constraintEnd_toStartOf="@+id/home_education_button"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/home_education_button"
+        android:id="@+id/home_experts_button"
         android:layout_width="69dp"
         android:layout_height="59dp"
-        android:layout_marginTop="673dp"
-
-        android:layout_marginEnd="248dp"
-        android:layout_marginRight="248dp"
+        android:layout_marginTop="672dp"
+        android:layout_marginEnd="256dp"
+        android:layout_marginRight="256dp"
         android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
