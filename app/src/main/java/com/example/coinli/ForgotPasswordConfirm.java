@@ -6,12 +6,12 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Expert_search extends AppCompatActivity implements View.OnClickListener {
+public class ForgotPasswordConfirm extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.expert_search);
+        setContentView(R.layout.forgot_password_confirm);
 
     }
     public void onClick(View arg0) {
