@@ -14,6 +14,54 @@
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".ForgotPassword"
+            android:label="ForgotPassword"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Balance"
+            android:label="Balance"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Chat_private"
+            android:label="Chat_private"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChatCommunity"
+            android:label="ChatCommunity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChatGroup"
+            android:label="ChatGroup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ExpertInfo"
+            android:label="ExpertInfo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Experts"
+            android:label="Experts"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ExpertSearch"
+            android:label="ExpertSearch"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ForgotPasswordCode"
+            android:label="ForgotPasswordCode"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ForgotPasswordConfirm"
+            android:label="ForgotPasswordConfirm"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Profile"
+            android:label="Profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Settings"
+            android:label="Settings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".Sign_up"
             android:label="@string/title_activity_sign_up"
             android:theme="@style/AppTheme.NoActionBar" />
