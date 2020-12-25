@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if(arg0.getId() == R.id.sign_in_forgot_password_button)
         {
-            Intent transfer_to_sign_up = new Intent(this, Sign_up.class);
-            this.startActivity(transfer_to_sign_up);
+            Intent transfer_ForgotPassword = new Intent(this, ForgotPassword.class);
+            this.startActivity(transfer_ForgotPassword);
         }
     }
 

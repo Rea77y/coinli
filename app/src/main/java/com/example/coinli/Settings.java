@@ -12,7 +12,7 @@ public class Settings extends AppCompatActivity implements View.OnClickListener 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.settings);e
+        setContentView(R.layout.settings);
 
     }
     public void onClick(View arg0) {
