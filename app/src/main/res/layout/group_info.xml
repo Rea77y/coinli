@@ -42,7 +42,7 @@
         app:layout_constraintVertical_bias="0.555" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/group_info_shared_files_button"
         android:layout_width="282dp"
         android:layout_height="48dp"
         android:background="@android:color/transparent"
@@ -54,7 +54,7 @@
         app:layout_constraintVertical_bias="0.657" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/group_info_show_members_button"
         android:layout_width="283dp"
         android:layout_height="44dp"
         android:background="@android:color/transparent"
@@ -63,5 +63,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.762" />
+
+    <Button
+        android:id="@+id/group_info_report_button"
+        android:layout_width="282dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.864" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
