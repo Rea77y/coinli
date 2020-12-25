@@ -8,7 +8,17 @@
     >
 
     <Button
-        android:id="@+id/expert_search_back_button"
+        android:id="@+id/com_search_settings_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/com_search_back_button"
         android:layout_width="61dp"
         android:layout_height="51dp"
         android:background="@android:color/transparent"
@@ -20,17 +30,7 @@
         app:layout_constraintVertical_bias="0.085" />
 
     <Button
-        android:id="@+id/expert_search_settings_button"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginRight="3dp"
-        android:background="@android:color/transparent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"  />
-
-    <Button
-        android:id="@+id/expert_search_selective_search_button"
+        android:id="@+id/com_search_selective_search_button"
         android:layout_width="192dp"
         android:layout_height="36dp"
         android:background="@android:color/transparent"
@@ -40,5 +40,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.093" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
