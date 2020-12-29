@@ -15,13 +15,14 @@
         android:autofillHints=""
         android:background="@android:color/transparent"
         android:ems="10"
-        android:hint="pasword"
+        android:hint="Password"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.468"
+        app:layout_constraintVertical_bias="0.47"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -55,14 +56,14 @@
         android:layout_height="41dp"
         android:background="@android:color/transparent"
         android:ems="10"
-        android:hint="Name"
+        android:hint="Username"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.375" />
+        app:layout_constraintVertical_bias="0.373" />
 
     <Button
         android:id="@+id/sign_in_forgot_password_button"
