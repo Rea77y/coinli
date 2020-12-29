@@ -11,7 +11,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
 
-public class Home extends AppCompatActivity {
+public class Home extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,30 +19,21 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.home);
 
 
-        View tips_button= findViewById(R.id.home_tips_button);
-        tips_button.setOnClickListener((View.OnClickListener) this);
-        View sign_up_button= findViewById(R.id.sign_in_sign_up_button);
-        sign_up_button.setOnClickListener((View.OnClickListener) this);
-        View forgot_password= findViewById(R.id.sign_in_forgot_password_button);
-        forgot_password.setOnClickListener((View.OnClickListener) this);
+        View home_chat_community_button = findViewById(R.id.home_chat_button);
+        home_chat_community_button.setOnClickListener(this);
     }
 
     public void onClick(View arg0) {
-        if(arg0.getId() == R.id.home_tips_button) {
+        if(arg0.getId() == R.id.home_chat_button) {
             //Transports users to the home activity
-            Intent transfer_to_sign_in = new Intent(this,ChatCommunity.class);
-            this.startActivity(transfer_to_sign_in);
+            Intent transfer_to_ChatCommunity = new Intent(this,ChatCommunity.class);
+            this.startActivity(transfer_to_ChatCommunity);
         }
-        if(arg0.getId() == R.id.sign_in_sign_up_button)
-        {
-            Intent transfer_to_sign_up = new Intent(this, Sign_up.class);
-            this.startActivity(transfer_to_sign_up);
-        }
-        if(arg0.getId() == R.id.sign_in_forgot_password_button)
-        {
-            Intent transfer_to_sign_up = new Intent(this, Sign_up.class);
-            this.startActivity(transfer_to_sign_up);
-        }
+
     }
 
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
+    }
 }
