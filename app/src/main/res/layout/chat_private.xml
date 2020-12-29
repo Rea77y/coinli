@@ -85,5 +85,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.087" />
 
+    <Button
+        android:id="@+id/chat_private_add_chat_button"
+        android:layout_width="231dp"
+        android:layout_height="36dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/chat_private_home_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.902" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
