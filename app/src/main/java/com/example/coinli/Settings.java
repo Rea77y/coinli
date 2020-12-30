@@ -29,9 +29,10 @@ public class Settings extends AppCompatActivity implements View.OnClickListener 
     public void onClick(View arg0) {
         if (arg0.getId() == R.id.settings_back_button) {
             //Transports users to the personal activity
-            Intent transfer_to_profile = new Intent(this, Help.class);
+            Intent transfer_to_profile = new Intent(this, Home.class);
             this.startActivity(transfer_to_profile);
         }
+        /*
         if (arg0.getId() == R.id.settings_chat_info_button) {
             //Transports users to the Chat_info activity
             Intent transfer_to_chat_info = new Intent(this, Chat_info.class);
@@ -43,16 +44,17 @@ public class Settings extends AppCompatActivity implements View.OnClickListener 
             this.startActivity(transfer_to_data_storage);
         }
         if (arg0.getId() == R.id.settings_help_button) {
-            /*
+
             Intent transfer_to_data_storage = new Intent(this, Data_storage.class);
             this.startActivity(transfer_to_data_storage);
-            */
+
         }
         if (arg0.getId() == R.id.settings_invite_friends_button) {
-            /*
+
             Intent transfer_to_data_storage = new Intent(this, Data_storage.class);
             this.startActivity(transfer_to_data_storage);
-            */
+
         }
+        */
     }
 }
