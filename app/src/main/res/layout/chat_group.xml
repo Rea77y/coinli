@@ -23,11 +23,13 @@
         android:id="@+id/chat_group_settings_button"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginRight="3dp"
         android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/chat_group_com_button"
@@ -57,12 +59,13 @@
         android:id="@+id/chat_group_experts_button"
         android:layout_width="79dp"
         android:layout_height="55dp"
-        android:layout_marginTop="676dp"
-        android:layout_marginEnd="252dp"
-        android:layout_marginRight="252dp"
         android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.997" />
 
     <Button
         android:id="@+id/chat_group_home_button"
@@ -79,12 +82,13 @@
         android:id="@+id/chat_group_profile_button"
         android:layout_width="69dp"
         android:layout_height="59dp"
-        android:layout_marginTop="673dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginRight="3dp"
         android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/chat_private_add_chat_button"
