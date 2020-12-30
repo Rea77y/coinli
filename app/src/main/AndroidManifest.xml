@@ -26,6 +26,10 @@
             android:label="Chat_private"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".Personal_info"
+            android:label="Personal_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".ChatCommunity"
             android:label="ChatCommunity"
             android:theme="@style/AppTheme.NoActionBar" />
