@@ -15,18 +15,7 @@ public class ForgotPassword extends AppCompatActivity implements View.OnClickLis
 
     }
     public void onClick(View arg0) {
-        if (arg0.getId() == R.id.sign_in_sign_in_button) {
-            //Transports users to the home activity
-            Intent transfer_to_sign_in = new Intent(this, Home.class);
-            this.startActivity(transfer_to_sign_in);
-        }
-        if (arg0.getId() == R.id.sign_in_sign_up_button) {
-            Intent transfer_to_sign_up = new Intent(this, Sign_up.class);
-            this.startActivity(transfer_to_sign_up);
-        }
-        if (arg0.getId() == R.id.sign_in_forgot_password_button) {
-            Intent transfer_to_sign_up = new Intent(this, Sign_up.class);
-            this.startActivity(transfer_to_sign_up);
-        }
+
+
     }
 }
