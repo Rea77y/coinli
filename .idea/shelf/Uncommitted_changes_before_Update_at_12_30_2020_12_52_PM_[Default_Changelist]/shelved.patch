@@ -1,0 +1,262 @@
+Index: app/src/main/java/com/example/coinli/ChatCommunity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.coinli;\r\n\r\nimport android.content.Intent;\r\nimport android.os.Bundle;\r\nimport android.view.View;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\npublic class ChatCommunity extends AppCompatActivity implements View.OnClickListener {\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.chat_com);\r\n        View chat_com_home_button = findViewById(R.id.chat_com_home_button);\r\n        chat_com_home_button.setOnClickListener(this);\r\n        View chat_com_experts_button = findViewById(R.id.chat_com_experts_button);\r\n        chat_com_experts_button.setOnClickListener(this);\r\n        View chat_com_balance_button = findViewById(R.id.chat_com_balance_button);\r\n        chat_com_balance_button.setOnClickListener(this);\r\n        View chat_com_profile_button = findViewById(R.id.chat_com_profile_button);\r\n        chat_com_profile_button.setOnClickListener(this);\r\n        View chat_com_group_button = findViewById(R.id.chat_com_group_button);\r\n        chat_com_group_button.setOnClickListener(this);\r\n        View chat_com_private_button = findViewById(R.id.chat_com_private_button);\r\n        chat_com_private_button.setOnClickListener(this);\r\n        View chat_com_settings_button = findViewById(R.id.chat_com_settings_button);\r\n        chat_com_settings_button.setOnClickListener(this);\r\n\r\n    }\r\n    public void onClick(View arg0) {\r\n        if (arg0.getId() == R.id.chat_com_home_button) {\r\n            //Transports users to the home activity\r\n            Intent transfer_to_home = new Intent(this, Home.class);\r\n            this.startActivity(transfer_to_home);\r\n        }\r\n        if (arg0.getId() == R.id.chat_com_experts_button) {\r\n            //Transports users to the experts activity\r\n            Intent transfer_to_experts = new Intent(this, Experts.class);\r\n            this.startActivity(transfer_to_experts);\r\n        }\r\n        if (arg0.getId() == R.id.chat_com_balance_button) {\r\n            //Transports users to the balance activity\r\n            Intent transfer_to_balance = new Intent(this, Balance.class);\r\n            this.startActivity(transfer_to_balance);\r\n        }\r\n        if (arg0.getId() == R.id.chat_com_profile_button) {\r\n            //Transports users to the profile activity\r\n            Intent transfer_to_profile = new Intent(this, Profile.class);\r\n            this.startActivity(transfer_to_profile);\r\n        }\r\n        if (arg0.getId() == R.id.chat_com_group_button) {\r\n            //Transports users to the group activity\r\n            Intent transfer_to_group = new Intent(this, ChatGroup.class);\r\n            this.startActivity(transfer_to_group);\r\n        }\r\n        if (arg0.getId() == R.id.chat_com_private_button) {\r\n            //Transports users to the private activity\r\n            Intent transfer_to_private = new Intent(this, ChatCommunity.class);\r\n            this.startActivity(transfer_to_private);\r\n        }\r\n        if (arg0.getId() == R.id.chat_com_settings_button) {\r\n            //Transports users to the settings activity\r\n            Intent transfer_to_settings = new Intent(this, Settings.class);\r\n            this.startActivity(transfer_to_settings);\r\n        }\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/coinli/ChatCommunity.java	(revision 0c90a16a7449d0d77355c27832e668dfa4aeacae)
++++ app/src/main/java/com/example/coinli/ChatCommunity.java	(date 1609323669854)
+@@ -56,7 +56,7 @@
+         }
+         if (arg0.getId() == R.id.chat_com_private_button) {
+             //Transports users to the private activity
+-            Intent transfer_to_private = new Intent(this, ChatCommunity.class);
++            Intent transfer_to_private = new Intent(this, Chat_private.class);
+             this.startActivity(transfer_to_private);
+         }
+         if (arg0.getId() == R.id.chat_com_settings_button) {
+Index: app/src/main/res/layout/settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:background=\"@drawable/settings\"\r\n    >\r\n\r\n\r\n    <Button\r\n        android:id=\"@+id/settings_back_button\"\r\n        android:layout_width=\"55dp\"\r\n        android:layout_height=\"55dp\"\r\n        android:background=\"@android:color/transparent\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.011\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.087\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/settings_chat_info_button\"\r\n        android:layout_width=\"284dp\"\r\n        android:layout_height=\"48dp\"\r\n        android:background=\"@android:color/transparent\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.496\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.238\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/settings_notifications_button\"\r\n        android:layout_width=\"288dp\"\r\n        android:layout_height=\"47dp\"\r\n        android:background=\"@android:color/transparent\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.498\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.401\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/settings_help_button\"\r\n        android:layout_width=\"287dp\"\r\n        android:layout_height=\"42dp\"\r\n        android:background=\"@android:color/transparent\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.727\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/settings_data_storage_button\"\r\n        android:layout_width=\"285dp\"\r\n        android:layout_height=\"43dp\"\r\n        android:background=\"@android:color/transparent\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.498\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.569\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/settings_invite_friends_button\"\r\n        android:layout_width=\"283dp\"\r\n        android:layout_height=\"43dp\"\r\n        android:background=\"@android:color/transparent\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.885\" />\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/settings.xml	(revision 0c90a16a7449d0d77355c27832e668dfa4aeacae)
++++ app/src/main/res/layout/settings.xml	(date 1609324177451)
+@@ -4,77 +4,114 @@
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+-    android:background="@drawable/settings"
+-    >
++    android:background="@drawable/settings">
+ 
+ 
+     <Button
+         android:id="@+id/settings_back_button"
+         android:layout_width="55dp"
+         android:layout_height="55dp"
++        android:layout_marginStart="5dp"
++        android:layout_marginLeft="5dp"
++        android:layout_marginTop="58dp"
++        android:layout_marginEnd="352dp"
++        android:layout_marginRight="352dp"
++        android:layout_marginBottom="618dp"
+         android:background="@android:color/transparent"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.011"
++        app:layout_constraintHorizontal_bias="1.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintVertical_bias="0.087" />
++        app:layout_constraintVertical_bias="0.0" />
+ 
+     <Button
+         android:id="@+id/settings_chat_info_button"
+         android:layout_width="284dp"
+         android:layout_height="48dp"
++        android:layout_marginStart="63dp"
++        android:layout_marginLeft="63dp"
++        android:layout_marginTop="163dp"
++        android:layout_marginEnd="64dp"
++        android:layout_marginRight="64dp"
++        android:layout_marginBottom="520dp"
+         android:background="@android:color/transparent"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.496"
++        app:layout_constraintHorizontal_bias="1.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintVertical_bias="0.238" />
++        app:layout_constraintVertical_bias="1.0" />
+ 
+     <Button
+         android:id="@+id/settings_notifications_button"
+         android:layout_width="288dp"
+         android:layout_height="47dp"
++        android:layout_marginStart="60dp"
++        android:layout_marginLeft="60dp"
++        android:layout_marginTop="275dp"
++        android:layout_marginEnd="63dp"
++        android:layout_marginRight="63dp"
++        android:layout_marginBottom="409dp"
+         android:background="@android:color/transparent"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.498"
++        app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintVertical_bias="0.401" />
++        app:layout_constraintVertical_bias="0.0" />
+ 
+     <Button
+         android:id="@+id/settings_help_button"
+         android:layout_width="287dp"
+         android:layout_height="42dp"
++        android:layout_marginStart="62dp"
++        android:layout_marginLeft="62dp"
++        android:layout_marginTop="501dp"
++        android:layout_marginEnd="62dp"
++        android:layout_marginRight="62dp"
++        android:layout_marginBottom="188dp"
+         android:background="@android:color/transparent"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintVertical_bias="0.727" />
++        app:layout_constraintVertical_bias="0.0" />
+ 
+     <Button
+         android:id="@+id/settings_data_storage_button"
+         android:layout_width="285dp"
+         android:layout_height="43dp"
++        android:layout_marginStart="62dp"
++        android:layout_marginLeft="62dp"
++        android:layout_marginTop="392dp"
++        android:layout_marginEnd="64dp"
++        android:layout_marginRight="64dp"
++        android:layout_marginBottom="296dp"
+         android:background="@android:color/transparent"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.498"
++        app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintVertical_bias="0.569" />
++        app:layout_constraintVertical_bias="0.0" />
+ 
+     <Button
+         android:id="@+id/settings_invite_friends_button"
+         android:layout_width="283dp"
+         android:layout_height="43dp"
++        android:layout_marginStart="63dp"
++        android:layout_marginLeft="63dp"
++        android:layout_marginTop="609dp"
++        android:layout_marginEnd="65dp"
++        android:layout_marginRight="65dp"
++        android:layout_marginBottom="79dp"
+         android:background="@android:color/transparent"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintVertical_bias="0.885" />
++        app:layout_constraintVertical_bias="0.0" />
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/balance.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:background=\"@drawable/empty_balance_true\">\r\n\r\n    <Button\r\n        android:id=\"@+id/balance_experts_button\"\r\n        android:layout_width=\"75dp\"\r\n        android:layout_height=\"51dp\"\r\n        android:background=\"@android:color/transparent\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.263\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.991\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/balance_chat_button\"\r\n        android:layout_width=\"90dp\"\r\n        android:layout_height=\"53dp\"\r\n        android:background=\"@android:color/transparent\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.0\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.991\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/profile_home_button\"\r\n        android:layout_width=\"79dp\"\r\n        android:layout_height=\"57dp\"\r\n        android:background=\"@android:color/transparent\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"1.0\"  />\r\n\r\n    <Button\r\n        android:id=\"@+id/balance_profile_button\"\r\n        android:layout_width=\"69dp\"\r\n        android:layout_height=\"59dp\"\r\n        android:layout_marginTop=\"673dp\"\r\n        android:layout_marginEnd=\"3dp\"\r\n        android:layout_marginRight=\"3dp\"\r\n        android:background=\"@android:color/transparent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/balance_settings_button\"\r\n        android:layout_width=\"50dp\"\r\n        android:layout_height=\"50dp\"\r\n        android:layout_marginEnd=\"3dp\"\r\n        android:layout_marginRight=\"3dp\"\r\n        android:background=\"@android:color/transparent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/balance_show_stat_button\"\r\n        android:layout_width=\"107dp\"\r\n        android:layout_height=\"87dp\"\r\n        android:background=\"@android:color/transparent\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.052\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.253\" />\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>\r\n\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/balance.xml	(revision 0c90a16a7449d0d77355c27832e668dfa4aeacae)
++++ app/src/main/res/layout/balance.xml	(date 1609323605921)
+@@ -4,7 +4,7 @@
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+-    android:background="@drawable/empty_balance_true">
++    android:background="@drawable/balance_empty">
+ 
+     <Button
+         android:id="@+id/balance_experts_button"
+Index: app/src/main/res/layout/home.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:background=\"@drawable/empty_home\"\r\n    android:orientation=\"vertical\"\r\n    tools:context=\".Home\">\r\n\r\n\r\n    <Button\r\n        android:id=\"@+id/home_tips_button\"\r\n        android:layout_width=\"280dp\"\r\n        android:layout_height=\"44dp\"\r\n\r\n        android:layout_marginStart=\"66dp\"\r\n        android:layout_marginLeft=\"66dp\"\r\n        android:layout_marginTop=\"615dp\"\r\n        android:layout_marginEnd=\"66dp\"\r\n        android:layout_marginRight=\"66dp\"\r\n        android:layout_marginBottom=\"72dp\"\r\n        android:background=\"@android:color/transparent\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/home_settings_button\"\r\n        android:layout_width=\"50dp\"\r\n        android:layout_height=\"50dp\"\r\n        android:layout_marginStart=\"358dp\"\r\n        android:layout_marginLeft=\"358dp\"\r\n        android:layout_marginEnd=\"3dp\"\r\n        android:layout_marginRight=\"3dp\"\r\n        android:layout_marginBottom=\"681dp\"\r\n        android:background=\"@android:color/transparent\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/home_profile_button\"\r\n        android:layout_width=\"69dp\"\r\n        android:layout_height=\"59dp\"\r\n        android:layout_marginStart=\"339dp\"\r\n        android:layout_marginLeft=\"339dp\"\r\n        android:layout_marginTop=\"673dp\"\r\n        android:layout_marginEnd=\"3dp\"\r\n        android:layout_marginRight=\"3dp\"\r\n        android:background=\"@android:color/transparent\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/home_balance_button\"\r\n        android:layout_width=\"69dp\"\r\n        android:layout_height=\"59dp\"\r\n        android:layout_marginTop=\"673dp\"\r\n        android:layout_marginEnd=\"85dp\"\r\n        android:layout_marginRight=\"85dp\"\r\n        android:background=\"@android:color/transparent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/home_chat_button\"\r\n        android:layout_width=\"60dp\"\r\n        android:layout_height=\"59dp\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"672dp\"\r\n        android:layout_marginEnd=\"335dp\"\r\n        android:layout_marginRight=\"335dp\"\r\n        android:background=\"@android:color/transparent\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"1.0\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"1.0\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/home_experts_button\"\r\n        android:layout_width=\"69dp\"\r\n        android:layout_height=\"59dp\"\r\n        android:layout_marginStart=\"86dp\"\r\n        android:layout_marginLeft=\"86dp\"\r\n        android:layout_marginTop=\"672dp\"\r\n        android:layout_marginEnd=\"256dp\"\r\n        android:layout_marginRight=\"256dp\"\r\n        android:background=\"@android:color/transparent\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/home.xml	(revision 0c90a16a7449d0d77355c27832e668dfa4aeacae)
++++ app/src/main/res/layout/home.xml	(date 1609324951717)
+@@ -30,16 +30,12 @@
+         android:id="@+id/home_settings_button"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+-        android:layout_marginStart="358dp"
+-        android:layout_marginLeft="358dp"
+-        android:layout_marginEnd="3dp"
+-        android:layout_marginRight="3dp"
+-        android:layout_marginBottom="681dp"
++        android:layout_marginStart="356dp"
++        android:layout_marginLeft="356dp"
++        android:layout_marginBottom="676dp"
+         android:background="@android:color/transparent"
+         app:layout_constraintBottom_toBottomOf="parent"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toTopOf="parent" />
++        app:layout_constraintStart_toStartOf="parent" />
+ 
+     <Button
+         android:id="@+id/home_profile_button"
+Index: app/src/main/java/com/example/coinli/Profile.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.coinli;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\nimport android.content.Intent;\r\nimport android.os.Bundle;\r\nimport android.view.View;\r\n\r\n\r\npublic class Profile extends AppCompatActivity implements View.OnClickListener  {\r\n\r\n    @Override\r\n\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.profile);\r\n\r\n\r\n    }\r\n\r\n    public void onClick(View arg0) {\r\n\r\n    }\r\n\r\n\r\n\r\n\r\n}\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/coinli/Profile.java	(revision 0c90a16a7449d0d77355c27832e668dfa4aeacae)
++++ app/src/main/java/com/example/coinli/Profile.java	(date 1609324646371)
+@@ -14,12 +14,17 @@
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.profile);
+-
++        View profile_settings_button = findViewById(R.id.profile_settings_button);
++        profile_settings_button.setOnClickListener(this);
+ 
+     }
+ 
+     public void onClick(View arg0) {
+-
++        if(arg0.getId() == R.id.profile_settings_button)
++        {
++            Intent transfer_to_settings = new Intent(this,Settings.class);
++            this.startActivity(transfer_to_settings);
++        }
+     }
+ 
+ 
+Index: app/src/main/java/com/example/coinli/Settings.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.coinli;\r\n\r\n\r\nimport android.content.Intent;\r\nimport android.os.Bundle;\r\nimport android.view.View;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\npublic class Settings extends AppCompatActivity implements View.OnClickListener {\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.settings);\r\n\r\n    }\r\n    public void onClick(View arg0) {\r\n        if (arg0.getId() == R.id.sign_in_sign_in_button) {\r\n            //Transports users to the home activity\r\n            Intent transfer_to_sign_in = new Intent(this, Home.class);\r\n            this.startActivity(transfer_to_sign_in);\r\n        }\r\n        if (arg0.getId() == R.id.sign_in_sign_up_button) {\r\n            Intent transfer_to_sign_up = new Intent(this, Sign_up.class);\r\n            this.startActivity(transfer_to_sign_up);\r\n        }\r\n        if (arg0.getId() == R.id.sign_in_forgot_password_button) {\r\n            Intent transfer_to_sign_up = new Intent(this, Sign_up.class);\r\n            this.startActivity(transfer_to_sign_up);\r\n        }\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/coinli/Settings.java	(revision 0c90a16a7449d0d77355c27832e668dfa4aeacae)
++++ app/src/main/java/com/example/coinli/Settings.java	(date 1609324064283)
+@@ -16,18 +16,7 @@
+ 
+     }
+     public void onClick(View arg0) {
+-        if (arg0.getId() == R.id.sign_in_sign_in_button) {
+-            //Transports users to the home activity
+-            Intent transfer_to_sign_in = new Intent(this, Home.class);
+-            this.startActivity(transfer_to_sign_in);
+-        }
+-        if (arg0.getId() == R.id.sign_in_sign_up_button) {
+-            Intent transfer_to_sign_up = new Intent(this, Sign_up.class);
+-            this.startActivity(transfer_to_sign_up);
+-        }
+-        if (arg0.getId() == R.id.sign_in_forgot_password_button) {
+-            Intent transfer_to_sign_up = new Intent(this, Sign_up.class);
+-            this.startActivity(transfer_to_sign_up);
+-        }
++
++
+     }
+ }
