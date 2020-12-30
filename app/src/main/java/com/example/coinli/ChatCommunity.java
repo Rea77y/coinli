@@ -12,20 +12,20 @@ public class ChatCommunity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chat_com);
-        View chat_private_home_button = findViewById(R.id.chat_com_home_button);
-        chat_private_home_button.setOnClickListener(this);
-        View chat_private_experts_button = findViewById(R.id.chat_com_experts_button);
-        chat_private_experts_button.setOnClickListener(this);
-        View chat_private_balance_button = findViewById(R.id.chat_com_balance_button);
-        chat_private_balance_button.setOnClickListener(this);
-        View chat_private_profile_button = findViewById(R.id.chat_com_profile_button);
-        chat_private_profile_button.setOnClickListener(this);
-        View chat_private_group_button = findViewById(R.id.chat_com_group_button);
-        chat_private_group_button.setOnClickListener(this);
-        View chat_private_com_button = findViewById(R.id.chat_com_private_button);
-        chat_private_com_button.setOnClickListener(this);
-        View chat_private_settings_button = findViewById(R.id.chat_com_settings_button);
-        chat_private_settings_button.setOnClickListener(this);
+        View chat_com_home_button = findViewById(R.id.chat_com_home_button);
+        chat_com_home_button.setOnClickListener(this);
+        View chat_com_experts_button = findViewById(R.id.chat_com_experts_button);
+        chat_com_experts_button.setOnClickListener(this);
+        View chat_com_balance_button = findViewById(R.id.chat_com_balance_button);
+        chat_com_balance_button.setOnClickListener(this);
+        View chat_com_profile_button = findViewById(R.id.chat_com_profile_button);
+        chat_com_profile_button.setOnClickListener(this);
+        View chat_com_group_button = findViewById(R.id.chat_com_group_button);
+        chat_com_group_button.setOnClickListener(this);
+        View chat_com_private_button = findViewById(R.id.chat_com_private_button);
+        chat_com_private_button.setOnClickListener(this);
+        View chat_com_settings_button = findViewById(R.id.chat_com_settings_button);
+        chat_com_settings_button.setOnClickListener(this);
 
     }
     public void onClick(View arg0) {
