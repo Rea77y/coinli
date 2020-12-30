@@ -56,7 +56,5 @@ public class Profile extends AppCompatActivity implements View.OnClickListener  
     }
 
 
-
-
 }
 
