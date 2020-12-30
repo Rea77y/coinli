@@ -29,36 +29,6 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
             Intent transfer_to_ChatCommunity = new Intent(this,ChatCommunity.class);
             this.startActivity(transfer_to_ChatCommunity);
         }
-        if (arg0.getId() == R.id.chat_private_experts_button) {
-            //Transports users to the experts activity
-            Intent transfer_to_experts = new Intent(this, Experts.class);
-            this.startActivity(transfer_to_experts);
-        }
-        if (arg0.getId() == R.id.chat_private_balance_button) {
-            //Transports users to the balance activity
-            Intent transfer_to_balance = new Intent(this, Balance.class);
-            this.startActivity(transfer_to_balance);
-        }
-        if (arg0.getId() == R.id.chat_private_profile_button) {
-            //Transports users to the profile activity
-            Intent transfer_to_profile = new Intent(this, Profile.class);
-            this.startActivity(transfer_to_profile);
-        }
-        if (arg0.getId() == R.id.chat_private_group_button) {
-            //Transports users to the group activity
-            Intent transfer_to_group = new Intent(this, ChatGroup.class);
-            this.startActivity(transfer_to_group);
-        }
-        if (arg0.getId() == R.id.chat_private_com_button) {
-            //Transports users to the community activity
-            Intent transfer_to_com = new Intent(this, ChatCommunity.class);
-            this.startActivity(transfer_to_com);
-        }
-        if (arg0.getId() == R.id.chat_private_settings_button) {
-            //Transports users to the settings activity
-            Intent transfer_to_settings = new Intent(this, Settings.class);
-            this.startActivity(transfer_to_settings);
-        }
 
     }
 
