@@ -23,25 +23,36 @@ public class Settings extends AppCompatActivity implements View.OnClickListener 
         settings_data_storage_button.setOnClickListener(this);
         View settings_help_button = findViewById(R.id.settings_help_button);
         settings_help_button.setOnClickListener(this);
-        View chat_com_private_button = findViewById(R.id.chat_com_private_button);
-        chat_com_private_button.setOnClickListener(this);
         View settings_invite_friends_button = findViewById(R.id.settings_invite_friends_button);
         settings_invite_friends_button.setOnClickListener(this);
-
     }
     public void onClick(View arg0) {
         if (arg0.getId() == R.id.settings_back_button) {
             //Transports users to the personal activity
-            Intent transfer_to_profile = new Intent(this, Profile.class);
+            Intent transfer_to_profile = new Intent(this, Help.class);
             this.startActivity(transfer_to_profile);
         }
-        if (arg0.getId() == R.id.sign_in_sign_up_button) {
-            Intent transfer_to_sign_up = new Intent(this, Sign_up.class);
-            this.startActivity(transfer_to_sign_up);
+        if (arg0.getId() == R.id.settings_chat_info_button) {
+            //Transports users to the Chat_info activity
+            Intent transfer_to_chat_info = new Intent(this, Chat_info.class);
+            this.startActivity(transfer_to_chat_info);
         }
-        if (arg0.getId() == R.id.sign_in_forgot_password_button) {
-            Intent transfer_to_sign_up = new Intent(this, Sign_up.class);
-            this.startActivity(transfer_to_sign_up);
+        if (arg0.getId() == R.id.settings_data_storage_button) {
+            //Transports users to the Data storage activity
+            Intent transfer_to_data_storage = new Intent(this, Data_storage.class);
+            this.startActivity(transfer_to_data_storage);
+        }
+        if (arg0.getId() == R.id.settings_help_button) {
+            /*
+            Intent transfer_to_data_storage = new Intent(this, Data_storage.class);
+            this.startActivity(transfer_to_data_storage);
+            */
+        }
+        if (arg0.getId() == R.id.settings_invite_friends_button) {
+            /*
+            Intent transfer_to_data_storage = new Intent(this, Data_storage.class);
+            this.startActivity(transfer_to_data_storage);
+            */
         }
     }
 }
