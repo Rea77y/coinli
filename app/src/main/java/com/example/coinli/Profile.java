@@ -18,6 +18,12 @@ public class Profile extends AppCompatActivity implements View.OnClickListener  
         profile_settings_button.setOnClickListener(this);
         View profile_personal_info_button = findViewById(R.id.profile_personal_information_button);
         profile_personal_info_button.setOnClickListener(this);
+        View profile_chat_community_button = findViewById(R.id.profile_chat_button);
+        profile_chat_community_button.setOnClickListener(this);
+        View profile_experts_button = findViewById(R.id.profile_experts_button);
+        profile_experts_button.setOnClickListener(this);
+        View profile_balance_button = findViewById(R.id.profile_balance_button);
+        profile_balance_button.setOnClickListener(this);
 
     }
 
@@ -31,6 +37,21 @@ public class Profile extends AppCompatActivity implements View.OnClickListener  
         {
             Intent transfer_to_personal_info = new Intent(this,Personal_info.class);
             this.startActivity(transfer_to_personal_info);
+        }
+        if(arg0.getId() == R.id.profile_chat_button)
+        {
+            Intent transfer_to_chat_com = new Intent(this,ChatCommunity.class);
+            this.startActivity(transfer_to_chat_com);
+        }
+        if(arg0.getId() == R.id.profile_experts_button)
+        {
+            Intent transfer_to_experts = new Intent(this,Experts.class);
+            this.startActivity(transfer_to_experts);
+        }
+        if(arg0.getId() == R.id.profile_balance_button)
+        {
+            Intent transfer_to_balance = new Intent(this,Balance.class);
+            this.startActivity(transfer_to_balance);
         }
     }
 
