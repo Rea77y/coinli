@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/empty_balance_true">
+    android:background="@drawable/balance_empty">
 
     <Button
         android:id="@+id/balance_experts_button"
