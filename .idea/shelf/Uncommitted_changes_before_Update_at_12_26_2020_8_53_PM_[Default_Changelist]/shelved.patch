@@ -1,0 +1,45 @@
+Index: app/src/main/res/layout/forgot_password.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:background=\"@drawable/forgot_password\">\r\n\r\n\r\n    <Button\r\n        android:id=\"@+id/forgot_password_get_code_button\"\r\n        android:layout_width=\"284dp\"\r\n        android:layout_height=\"46dp\"\r\n        android:background=\"@android:color/transparent\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.496\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.56\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/forgot_password_username_textView\"\r\n        android:layout_width=\"286dp\"\r\n        android:layout_height=\"41dp\"\r\n        android:background=\"@android:color/transparent\"\r\n        android:hint=\"Username\"\r\n        android:shadowColor=\"#00FFFFFF\"\r\n        android:textColor=\"#000000\"\r\n        android:textColorHighlight=\"#FFFFFF\"\r\n        android:textSize=\"25dp\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.488\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.373\" />\r\n\r\n    <EditText\r\n        android:id=\"@+id/forgot_password_EmailAddress\"\r\n        android:layout_width=\"281dp\"\r\n        android:layout_height=\"43dp\"\r\n        android:background=\"@android:color/transparent\"\r\n        android:ems=\"10\"\r\n        android:hint=\"Email\"\r\n        android:inputType=\"textEmailAddress\"\r\n        android:shadowColor=\"#FFFFFF\"\r\n        android:textColor=\"#000000\"\r\n        android:textColorHighlight=\"#FFFFFF\"\r\n        android:textSize=\"25dp\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.7\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.466\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/forgot_password_user_return_button\"\r\n        android:layout_width=\"72dp\"\r\n        android:layout_height=\"31dp\"\r\n        android:background=\"@android:color/transparent\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.712\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.629\" />\r\n\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/forgot_password.xml	(revision d956acb7c99aba1d88dc11fb91352a4a29b9d067)
++++ app/src/main/res/layout/forgot_password.xml	(date 1608801594178)
+@@ -19,22 +19,6 @@
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="0.56" />
+ 
+-    <TextView
+-        android:id="@+id/forgot_password_username_textView"
+-        android:layout_width="286dp"
+-        android:layout_height="41dp"
+-        android:background="@android:color/transparent"
+-        android:hint="Username"
+-        android:shadowColor="#00FFFFFF"
+-        android:textColor="#000000"
+-        android:textColorHighlight="#FFFFFF"
+-        android:textSize="25dp"
+-        app:layout_constraintBottom_toBottomOf="parent"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.488"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintVertical_bias="0.373" />
+ 
+     <EditText
+         android:id="@+id/forgot_password_EmailAddress"
+@@ -50,10 +34,10 @@
+         android:textSize="25dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.7"
++        app:layout_constraintHorizontal_bias="0.507"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintVertical_bias="0.466" />
++        app:layout_constraintVertical_bias="0.468" />
+ 
+     <Button
+         android:id="@+id/forgot_password_user_return_button"
