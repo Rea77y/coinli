@@ -56,7 +56,7 @@ public class ChatCommunity extends AppCompatActivity implements View.OnClickList
         }
         if (arg0.getId() == R.id.chat_com_private_button) {
             //Transports users to the private activity
-            Intent transfer_to_private = new Intent(this, ChatCommunity.class);
+            Intent transfer_to_private = new Intent(this, Chat_private.class);
             this.startActivity(transfer_to_private);
         }
         if (arg0.getId() == R.id.chat_com_settings_button) {
