@@ -91,7 +91,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/chat_private_add_chat_button"
+        android:id="@+id/chat_group_add_chat_button"
         android:layout_width="231dp"
         android:layout_height="36dp"
         android:layout_marginStart="90dp"

@@ -26,6 +26,8 @@ public class ChatCommunity extends AppCompatActivity implements View.OnClickList
         chat_com_private_button.setOnClickListener(this);
         View chat_com_settings_button = findViewById(R.id.chat_com_settings_button);
         chat_com_settings_button.setOnClickListener(this);
+        View chat_com_join_Com_button = findViewById(R.id.chat_com_join_Com_button);
+        chat_com_join_Com_button.setOnClickListener(this);
 
     }
     public void onClick(View arg0) {
@@ -63,6 +65,11 @@ public class ChatCommunity extends AppCompatActivity implements View.OnClickList
             //Transports users to the settings activity
             Intent transfer_to_settings = new Intent(this, Settings.class);
             this.startActivity(transfer_to_settings);
+        }
+        if (arg0.getId() == R.id.chat_com_join_Com_button) {
+            //Transports users to the settings activity
+            Intent transfer_to_search = new Intent(this, ExpertSearch.class);
+            this.startActivity(transfer_to_search);
         }
     }
 }
