@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1007445660162",
+    "firebase_url": "https://coinli-b8e38-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "coinli-b8e38",
+    "storage_bucket": "coinli-b8e38.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007445660162:android:962c3020baf1562040cd1b",
+        "android_client_info": {
+          "package_name": "com.example.coinli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007445660162-ng84jkinf1d411v1sesbd6h2ge6g4p1e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgiCL4iSZ_ksEke_FPnj35D8SR2vA7fro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007445660162-ng84jkinf1d411v1sesbd6h2ge6g4p1e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
