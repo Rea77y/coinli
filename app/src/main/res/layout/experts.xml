@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="1.0"   />
 
     <Button
-        android:id="@+id/profile_balance_button"
+        android:id="@+id/experts_balance_button"
         android:layout_width="75dp"
         android:layout_height="48dp"
         android:background="@android:color/transparent"
