@@ -74,16 +74,15 @@
 
     <Button
         android:id="@+id/sign_in_forgot_password_button"
-        android:layout_width="127dp"
-        android:layout_height="26dp"
-        android:layout_marginBottom="260dp"
+        android:layout_width="138dp"
+        android:layout_height="40dp"
         android:background="@android:color/transparent"
         android:onClick="resetPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintHorizontal_bias="0.772"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.993" />
+        app:layout_constraintVertical_bias="0.63" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
